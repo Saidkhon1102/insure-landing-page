@@ -12,7 +12,7 @@
     background-color: $color-white;
     color: $color-charcoal;
   }
-  @include respond(sm) {
+  @include retort(sm) {
     font-size: 1.3rem;
   }
 }

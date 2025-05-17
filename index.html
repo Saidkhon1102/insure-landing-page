@@ -9,9 +9,25 @@
   </head>
   <body>
     <header class="header">
+       <nav class="retort hidden">
+        <ul class="retort__list">
+          <li class="retort__item">
+            <a class="retort__link" href="#">HOW WE WORK</a>
+          </li>
+          <li class="retort__item">
+            <a class="retort__link" href="#">BLOG</a>
+          </li>
+          <li class="retort__item">
+            <a class="retort__link" href="#">ACCOUNT</a>
+          </li>
+          <li class="retort__item">
+            <a class="retort__link retort__btn" href="#">VIEW PLANS</a>
+          </li>
+        </ul>
+      </nav>
       <div class="header__container container">
         <a href="#"><img src="./images/logo.svg" alt="" width="111" height="18" /></a>
-        <nav class="sitenav">
+        <nav class="sidebar">
           <img
             src="./images/icon-hamburger.svg"
             width="32"
@@ -27,18 +43,18 @@
             height="32"
             alt=""
           />
-          <ul class="sitenav__list">
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link">HOW WE WORK</a>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">HOW WE WORK</a>
             </li>
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link">BLOG</a>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">BLOG</a>
             </li>
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link">ACCOUNT</a>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">ACCOUNT</a>
             </li>
-            <li class="sitenav__item">
-              <a href="#" class="sitenav__link header__btn">VIEW PLANS</a>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link header__btn">VIEW PLANS</a>
             </li>
           </ul>
         </nav>
@@ -92,46 +108,46 @@
           />
         </div>
       </section>
-      <section class="services">
-        <div class="services__container container">
-          <div class="services__mark"></div>
-          <h1 class="services__title">We’re different</h1>
-          <ul class="services__list">
-            <li class="services__item">
+      <section class="features">
+        <div class="features__container container">
+          <div class="features__mark"></div>
+          <h1 class="features__title">We’re different</h1>
+          <ul class="features__list">
+            <li class="features__item">
               <img
                 src="./images/icon-snappy-process.svg"
                 alt=""
                 width="86"
                 height="86"
               />
-              <h3 class="services__subtitle">Snappy Process</h3>
-              <p class="services__description">
+              <h3 class="features__subtitle">Snappy Process</h3>
+              <p class="features__description">
                 Our application process can be completed in minutes, not hours.
                 Don’t get stuck filling in tedious forms.
               </p>
             </li>
-            <li class="services__item">
+            <li class="features__item">
               <img
                 src="./images/icon-affordable-prices.svg"
                 alt=""
                 width="86"
                 height="86"
               />
-              <h3 class="services__subtitle">Affordable Prices</h3>
-              <p class="services__description">
+              <h3 class="features__subtitle">Affordable Prices</h3>
+              <p class="features__description">
                 We don’t want you worrying about high monthly costs. Our prices
                 may be low, but we still offer the best coverage possible.
               </p>
             </li>
-            <li class="services__item">
+            <li class="features__item">
               <img
                 src="./images/icon-people-first.svg"
                 alt=""
                 width="86"
                 height="86"
               />
-              <h3 class="services__subtitle">People First</h3>
-              <p class="services__description">
+              <h3 class="features__subtitle">People First</h3>
+              <p class="features__description">
                 Our plans aren’t full of conditions and clauses to prevent
                 payouts. We make sure you’re covered when you need it.
               </p>
@@ -189,5 +205,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>

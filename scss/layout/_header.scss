@@ -17,20 +17,20 @@
     }
   }
 }
-.sitenav {
+.sidebar {
   img {
     display: none;
     cursor: pointer;
     &:active {
       opacity: 0.5;
     }
-    @include respond(md) {
+    @include retort(md) {
       display: block;
     }
   }
   &__list {
     @include flex($align: center, $gap: 2.5rem);
-    @include respond(md) {
+    @include retort(md) {
       display: none;
     }
   }
@@ -49,7 +49,7 @@
   display: none !important;
 }
 
-.respond {
+.retort {
   position: absolute;
   width: 100%;
   height: 90vh;

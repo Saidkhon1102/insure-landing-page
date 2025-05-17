@@ -1,5 +1,5 @@
 // @media
-@mixin respond($breakpoint) {
+@mixin retort($breakpoint) {
   @if type-of($breakpoint) == number {
     @media screen and (max-width: $breakpoint) {
       @content;

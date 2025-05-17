@@ -5,7 +5,7 @@
   background-color: #fafafa;
   background-image: url("../images/footer.png");
   background-repeat: no-repeat;
-  @include respond(sm) {
+  @inretort(sm) {
     padding: 8.8rem 2.4rem;
     background-position: top right -50px;
   }
@@ -14,7 +14,7 @@
     padding-bottom: 3.6rem;
     border-bottom: 1px solid #dadada;
     margin-bottom: 4rem;
-    @include respond(sm) {
+    @include retort(sm) {
       @include flex($gap: 3.2rem, $direction: column, $align: center);
     }
   }
@@ -33,7 +33,7 @@
   }
   &__list {
     @include flex($justify: space-between, $wrap: wrap);
-    @include respond(sm) {
+    @include retort(sm) {
       @include flex($justify: center, $align: center, $wrap: wrap);
     }
   }
@@ -41,10 +41,10 @@
     width: 100%;
     max-width: 255px;
     @include flex($direction: column, $gap: 1.6rem);
-    @include respond(1135px) {
+    @include retort(1135px) {
       margin-bottom: 4rem;
     }
-    @include respond(sm) {
+    @include retort(sm) {
       text-align: center;
       @include flex(
         $direction: column,

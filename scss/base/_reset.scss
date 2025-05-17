@@ -42,7 +42,7 @@ h1 {
   margin-right: auto;
   padding-left: 5rem;
   padding-right: 5rem;
-  @include respond(md) {
+  @include retort(md) {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
