@@ -1,0 +1,65 @@
+// @media
+@mixin respond($breakpoint) {
+  @if type-of($breakpoint) == number {
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  } @else if $breakpoint == xs {
+    @media screen and (max-width: 375px) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media screen and (max-width: 576px) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media screen and (max-width: 992px) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $breakpoint == xxl {
+    @media screen and (max-width: 1400px) {
+      @content;
+    }
+  }
+}
+// flex
+@mixin flex(
+  $direction: row,
+  $justify: flex-start,
+  $align: stretch,
+  $wrap: nowrap,
+  $gap: 0
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+  gap: $gap;
+}
+
+// absolute center
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// m-center
+@mixin m-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Mixins Template
+
+// https://youtu.be/yRqEEkryraE?si=E5moVK7zw51ApV0G
+// Youtube Ulugbek Samigjonov SCSS BEMdan foydalanildi

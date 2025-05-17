@@ -1,0 +1,18 @@
+.btn {
+  padding: 1.3rem 2.8rem 1.2rem 2.8rem;
+  font-size: $font-sm;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background-color: transparent;
+  border: 1.5px solid $color-white;
+  color: $color-white;
+  text-align: center;
+  transition: 0.3s;
+  &:hover {
+    background-color: $color-white;
+    color: $color-charcoal;
+  }
+  @include respond(sm) {
+    font-size: 1.3rem;
+  }
+}

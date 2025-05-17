@@ -1,40 +1,53 @@
 *,
 *::after,
 *::before {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
-
 html {
   height: 100%;
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
-
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+  display: flex;
+}
 ul,
 ol {
   list-style: none;
 }
-
-a {
-  text-decoration: none;
-}
-
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  font-family: $font-karla, $font-dm;
+  font-weight: 400;
 }
-
 main {
   flex-grow: 1;
 }
-
+h1 {
+  margin: 0;
+}
 .container {
   width: 100%;
-  max-width: 1200px; // bu o'zgaruvchan
+  max-width: 1210px; // Bu o'zgaruvchan.
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  @include respond(md) {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
 }
+
+// margin, padding, border-radius, font-size, gap, -> rem;
+// width, heightni -> max va pxda bering.
+// line-height -> lh / font-size qilib bering.
